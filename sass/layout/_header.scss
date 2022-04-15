@@ -1,0 +1,101 @@
+.header {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    border: 1px solid #ECECEC;
+}
+
+.header .logo {
+    margin-right: 93px;
+}
+
+.logo-header {
+    color: var(--title-text-color);
+}
+
+.header-portfolio {
+    margin-bottom: 94px;
+}
+
+.nav-list { 
+    display: flex;
+
+    color: var(--title-text-color);
+}
+
+.nav-list .nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: baseline;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color var(--time-animation) var(--time-distribution);
+}
+
+.contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    transition: color var(--time-animation) var(--time-distribution);
+
+}
+
+.contact-link:hover {
+    fill: var(--accent-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.current-link {
+    color: var(--accent-color);
+}
+
+.current-link {
+    position: relative;
+} 
+
+.current-link::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: #2196F3;
+    border-radius: 2px;
+
+    position: absolute;
+    bottom: -1px;
+}
+
+
+
+.contact-list .contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.container-header {
+    display: flex;
+}
+
+.container-header .nav {
+    display: flex;
+    align-items: center;
+}
