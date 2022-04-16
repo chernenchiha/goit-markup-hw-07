@@ -56,11 +56,12 @@
     color: var(--primary-text-color);
     transition: color var(--time-animation) var(--time-distribution);
 
+    &:hover {
+        fill: var(--accent-color);
+    }
 }
 
-.contact-link:hover {
-    fill: var(--accent-color);
-}
+
 
 .header-link:hover,
 .header-link:focus,
@@ -70,19 +71,21 @@
 
 .current-link {
     position: relative;
+
+    &::after {
+        display: block;
+        content: "";
+        height: 4px;
+        width: 100%;
+        background: #2196F3;
+        border-radius: 2px;
+
+        position: absolute;
+        bottom: -1px;
+    }
 } 
 
-.current-link::after {
-    display: block;
-    content: "";
-    height: 4px;
-    width: 100%;
-    background: #2196F3;
-    border-radius: 2px;
 
-    position: absolute;
-    bottom: -1px;
-}
 
 
 

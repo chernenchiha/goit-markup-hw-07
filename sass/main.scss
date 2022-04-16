@@ -1,12 +1,15 @@
 @import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/common';
 @import './base/container';
-@import './utils/visually-hidden';
+
 @import './components/main-btn';
 @import './components/section-title';
 @import './components/logo';
 @import './components/icon-link';
 @import './components/title';
+
 @import './layout/modal';
 @import './layout/header';
 @import './layout/hero';
@@ -15,36 +18,5 @@
 @import './layout/team';
 @import './layout/clients';
 @import './layout/portfolio';
+@import './layout/activity';
 
-/*activity*/
-
-.list-img {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-}
-
-.item-img {
-    position: relative;
-    flex-basis: calc(100% / 3 - 30px);
-}
-
-.activity-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-
-
-    display: block;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.14;
-    text-align: center;
-    color: var(--white-text-color);
-    background-color: var(--bg-color-activity-wrraper);
-}

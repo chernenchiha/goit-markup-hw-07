@@ -1,15 +1,15 @@
-.clients-icon-list {
+.clients-icon__list {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
 }
 
-.clients-icon-item {
+.clients-icon__item {
     flex-basis: calc(100% / 6 - 30px);
 }
 
-.clients-icon-link {
+.clients-icon__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +20,12 @@
     
     color: var(--icon-color);
     transition: color var(--time-animation) var(--time-distribution), border var(--time-animation) var(--time-distribution);   
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+    }
 } 
 
 
@@ -28,8 +34,3 @@
 }
 
 
-.clients-icon-link:hover,
-.clients-icon-link:focus {
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-}

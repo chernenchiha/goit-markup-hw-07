@@ -36,18 +36,14 @@
 
 .team-icon-link {
     color: var(--icon-color);
-
     transition: color var(--time-animation) var(--time-distribution), background-color var(--time-animation) var(--time-distribution);
 
+    &:hover,
+    &:focus {
+        color: var(--white-text-color);   
+        background-color: var(--accent-color);
+    }
 }
-
-.team-icon-link:hover,
-.team-icon-link:focus {
-    color: var(--white-text-color);   
-    background-color: var(--accent-color);
-}
-
-
 
 .team-list {
     display: flex;
