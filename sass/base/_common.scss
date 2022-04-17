@@ -40,7 +40,11 @@ img {
     padding-top: 94px;
 }
 
-.item {
-    margin-left: 30px;
-    margin-top: 30px;
+.section-title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
 }

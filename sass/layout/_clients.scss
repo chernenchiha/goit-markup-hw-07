@@ -1,36 +1,38 @@
-.clients-icon__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-}
+.clients {
 
-.clients-icon__item {
-    flex-basis: calc(100% / 6 - 30px);
-}
-
-.clients-icon__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    height: 92px;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    
-    color: var(--icon-color);
-    transition: color var(--time-animation) var(--time-distribution), border var(--time-animation) var(--time-distribution);   
-
-    &:hover,
-    &:focus {
-        border: 1px solid var(--accent-color);
-        color: var(--accent-color);
+    &__list {
+        --card-item: 6;
     }
-} 
+    
+    &-icon {
+        fill: currentColor;
+    }
 
+        &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        height: 92px;
+        border: 1px solid var(--icon-color);
+        border-radius: 4px;
+        
+        color: var(--icon-color);
+        transition: color var(--time-animation) var(--time-distribution), border var(--time-animation) var(--time-distribution);   
 
-.clients-icon {
-    fill: currentColor;
+        &:hover,
+        &:focus {
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+    } 
 }
+
+
+
+
+
+
+
 
 
